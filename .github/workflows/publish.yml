@@ -22,8 +22,6 @@ jobs:
         run: cmake -B build -DCMAKE_TOOLCHAIN_FILE=$WASI_SDK_PATH/share/cmake/wasi-sdk.cmake -DCMAKE_BUILD_TYPE=Release
       - name: Build CMake
         run: cmake --build build
-      - name: Copy Cart
-        run: cp *.null0 webroot/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
