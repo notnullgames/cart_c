@@ -34,3 +34,9 @@ cmake --build build
 ```
 
 You will find your cart in `webroot/mygame.null0`
+
+If you have node installed, you can also get a nice watching-webseerver, locally:
+
+```
+npm start
+```
