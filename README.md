@@ -26,7 +26,6 @@ zip -r ../webroot/mygame.null0 . -x '*.h' '*.c'
 ```
 
 You can also use cmake (recommended) to build a complete cart:
-src/
 
 ```sh
 cmake -B build -DCMAKE_TOOLCHAIN_FILE="${WASI_SDK_PATH}/share/cmake/wasi-sdk.cmake" -DCMAKE_BUILD_TYPE=Release
@@ -40,3 +39,6 @@ If you have node installed, you can also get a nice watching-webseerver, locally
 ```
 npm start
 ```
+
+After this, create a github-release, and your cart will show up on releases ((like [here](https://github.com/notnullgames/cart_c/releases/)).
+
