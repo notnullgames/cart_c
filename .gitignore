@@ -2,3 +2,4 @@
 .vscode
 build
 *.null0
+*.wasm
