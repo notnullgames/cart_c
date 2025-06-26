@@ -32,3 +32,5 @@ src/
 cmake -B build -DCMAKE_TOOLCHAIN_FILE="${WASI_SDK_PATH}/share/cmake/wasi-sdk.cmake" -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 ```
+
+You will find your cart in `webroot/mygame.null0`
