@@ -22,13 +22,13 @@ Then you can do this:
 ```sh
 $WASI_SDK_PATH/bin/clang src/main.c -o src/main.wasm
 cd src
-zip -r ../mygame.null0 . -x '*.h' '*.c'
+zip -r ../webroot/mygame.null0 . -x '*.h' '*.c'
 ```
 
 You can also use cmake (recommended) to build a complete cart:
 src/
 
 ```sh
-cmake -B build -DCMAKE_TOOLCHAIN_FILE=$WASI_SDK_PATH/share/cmake/wasi-sdk.cmake -DCMAKE_BUILD_TYPE=Release
+cmake -B build -DCMAKE_TOOLCHAIN_FILE="${WASI_SDK_PATH}/share/cmake/wasi-sdk.cmake" -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 ```
